@@ -1,53 +1,33 @@
 package Assignment6_Collections;
 
+import java.util.TreeSet;
 public class q3 {
-	public class employee {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TreeSet<employee> obj=new TreeSet<>(new FirstComparator());
+		obj.add(new employee(1,"milan",41000.0,"Com"));
+		obj.add(new employee(2,"vila",63000.0,"Spain"));
+		obj.add(new employee(3,"archerr",77000.0,"TVm"));
+		obj.add(new employee(4,"mane",8222.0,"Liverpool"));
+		obj.add(new employee(5,"messi",56666.0,"Psg"));
+		obj.add(new employee(6,"CR7",200000.0,"Portugal"));
+		obj.add(new employee(7,"sancho",22000.0,"England"));
+		obj.add(new employee(8,"Neymer",9000.0,"Brazil"));
+		obj.add(new employee(9,"Kane",6000.0,"Tottenham"));
+		obj.add(new employee(10,"Greize",30000.0,"France"));
 		
-		public Integer id;
-		public String name;
-		public Double salary;
-		public String department;
-		public employee(Integer id, String name, Double salary, String department) {
-			super();
-			this.id = id;
-			this.name = name;
-			this.salary = salary;
-			this.department = department;
-		}
-		public void setId(Integer id) {
-			this.id = id;
-		}
-		public void setName(String name) {
-			this.name = name;
-		}
-		public void setSalary(Double salary) {
-			this.salary = salary;
-		}
-		public void setDepartment(String department) {
-			this.department = department;
+		for(employee e :obj) {
+			System.out.println(e);
 		}
 		
-		
-		public Integer getId() {
-			return id;
-		}
-		public String getName() {
-			return name;
-		}
-		public Double getSalary() {
-			return salary;
-		}
-		public String getDepartment() {
-			return department;
-		}
-		@Override
-		public String toString() {
-			// TODO Auto-generated method stub
-			return "Employee [id =" + this.id + ", name = " +this.name +", salary= "+ this.salary +", department= "+ this.department+"]";
-		}
-		
-		
-		
-		
+		//System.out.println("select the options:\n");
+	
+		//System.out.println("a) id: " );
 	}
+
 }
+
+
+
+
