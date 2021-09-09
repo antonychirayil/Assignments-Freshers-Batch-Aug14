@@ -1,36 +1,40 @@
 package Assignment10;
 
-import java.io.IOException;
-import java.nio.file.*;
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
 
 
 public class q4 {
 
-    public static void main(String[] args) throws IOException {
-        var path = "C:\\Users\\DELL\\Downloads\\Java11Assignments_StudentList";
-        try {
-            String names=Files.readString(Path.of(path));
-            //names.split("\\r?\\n");
-            ArrayList<String > namelist = new ArrayList<>(Arrays.asList(names));
+    public static void main(String[] args) {
 
-            System.out.println(namelist);
+    	    
+    	    	int count=0;
+    	        try {
+    	            Scanner scanner = new Scanner(new File("C:\\Users\\DELL\\eclipse-workspace\\Java Assignments\\Java\\Assignment10\\Java11Assignments_StudentList.txt"));
 
-            namelist.forEach(p->p.trim());
 
-            System.out.println("-----------------------------");
-            System.out.println(namelist.get(1));
+    	            while(scanner.hasNext())
+    	            {
+    	                String line = scanner.next();
 
-            /*for (String s:names1
-                 ) {
-                s.replace("\s+","");
-            }
-*/
-            //System.out.println(str2[3]);
+    	                String Trim = line.trim();
+    	             
+    	                System.out.println(Trim);
+    	   
+    	                count=count+1;
+    	            }
+    	            System.out.println("No of students are:"+count);
 
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-}
+
+    	        } 
+
+    	        catch (FileNotFoundException e) {
+
+    	            e.printStackTrace();
+    	        }
+
+    	    }
+
+    	}
