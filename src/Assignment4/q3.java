@@ -58,7 +58,11 @@ class savings {
         public static void main(String[] args) {
             savings user=new savings();
             user.getBalance();
+            //try it by uncommenting the below function one at a time 
+            //user.withdraw(4500);
+            //user.withdraw(-1000);
             user.withdraw(5300);
+           
 
 
         }
