@@ -1,8 +1,5 @@
 package Assignment8_Lambda;
 
-import java.util.ArrayList;
-import java.util.List;
-
 class Orders{
 
     int orderid;
@@ -24,19 +21,17 @@ interface checking{
 }
 public class q2 {
     public static void main(String[] args) {
-        Orders o1 = new Orders(1001,15000,"Accepted");
-        Orders o2 = new Orders(1008,21500,"completed");
-        Orders o3 = new Orders(1006,7500,"Accepted");
-        Orders o4= new Orders(1079,15000,"dispatched");
-
-        checking c1 = (Orders obj)->{
-          if (obj.orderPrice>10000&&(obj.status.equalsIgnoreCase("accepted")||obj.status.equalsIgnoreCase("completed")))
+        Orders order1 = new Orders(101,15000,"Accepted");
+        Orders order2 = new Orders(108,21500,"Completed");
+        Orders order3 = new Orders(106,7500,"Accepted");
+              //displaying items according to the criteria specified 
+        checking d = (Orders obj)->{
+          if (obj.orderPrice>10000&&(obj.status.equalsIgnoreCase("completed")||obj.status.equalsIgnoreCase("Accepted")))
               obj.display();
         };
 
-        c1.check(o1);
-        c1.check(o2);
-        c1.check(o3);
-        c1.check(o4);
+        d.check(order1);
+        d.check(order2);
+        d.check(order3);
     }
     }
