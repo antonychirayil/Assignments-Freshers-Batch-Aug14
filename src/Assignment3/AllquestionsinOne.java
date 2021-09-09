@@ -4,13 +4,18 @@ public class AllquestionsinOne {
 	
 		public static void main(String[] args)
 		{
+			//ASIGNMENTS ON STRING CLASS:
+			
+			//1
 			//String str = "Hello World";
 			//System.out.println(str.length());
 			
+			//2
 //			StringBuffer buffer = new StringBuffer("Hello, ");
 //			buffer.append("How are you?");
 //			System.out.println(buffer);
 			
+			//3
 			//String s= "Java String pool refers to collection of Strings which are stored in heap memory";
 //			System.out.println(s.toLowerCase());
 //			System.out.println(s.toUpperCase());
@@ -28,7 +33,7 @@ public class AllquestionsinOne {
 			 * ; if((s.equalsIgnoreCase(s1))) { System.out.println("The strings are equal");
 			 * }else { System.out.println("not eual or similar"); }
 			 */
-		
+			//ASSIGNMENTS ON STRING BUFFER CLASS
 			/*
 			 * StringBuffer str = new StringBuffer("String Buffer");
 			 * str.append(" is a peer class of string ");
@@ -46,6 +51,8 @@ public class AllquestionsinOne {
 			 * System.out.println(str2);
 			 */
 			
+			//ASSIGNMENTS ON STRINGBUILDER CLASS
+			// all similar output !! 
 			  StringBuilder str = new StringBuilder("String Buffer");
 			  str.append(" is a peer class of string ");
 			  str.append("that provides nuch of ");
