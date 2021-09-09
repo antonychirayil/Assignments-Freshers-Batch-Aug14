@@ -21,9 +21,6 @@ public class q3 {
 			System.out.println(e);
 		}
 		
-		//System.out.println("select the options:\n");
-	
-		//System.out.println("a) id: " );
 	}
 
 }

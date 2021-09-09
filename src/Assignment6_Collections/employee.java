@@ -44,8 +44,5 @@ public class employee {
 		// TODO Auto-generated method stub
 		return "Employee [id =" + this.id + ", name = " +this.name +", salary= "+ this.salary +", department= "+ this.department+"]";
 	}
-	
-	
-	
-	
+			
 }
