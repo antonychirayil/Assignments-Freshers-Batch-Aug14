@@ -6,21 +6,21 @@ import java.util.List;
 public class q6 {
 
     public static void main(String[] args) {
+    	//uses replace All 
 
-
-        List<String> list1 = new ArrayList<>();
-        list1.add("lower");
-        list1.add("case");
-        list1.add("turned");
-        list1.add("upper");
-        list1.add("case");
+        List<String> list= new ArrayList<>();
+        list.add("This");
+        list.add("is ");
+        list.add("an example");
+        list.add("of lower to upper");
+        list.add("case");
 
         System.out.println("Before using replaceALL:");
-        System.out.println(list1);
+        System.out.println(list);
 
-        list1.replaceAll(str->str.toUpperCase());
+        list.replaceAll(str->str.toUpperCase());
         System.out.println("After using replace all: ");
-        System.out.println(list1);
+        System.out.println(list);
     }
 
 }
