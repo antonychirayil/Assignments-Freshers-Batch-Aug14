@@ -8,7 +8,8 @@ class Lifecycle_HooksTest {
 
 	@Test
 	void test() {
-		fail("Not yet implemented");
+		Lifecycle_Hooks lifecyclehooks = new Lifecycle_Hooks();
+		assertEquals(2, lifecyclehooks.add(1, 1),"should Add two numbers");
 	}
 
 }
