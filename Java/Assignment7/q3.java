@@ -31,7 +31,8 @@ public class q3{
             System.out.println("Method 3");
         }
 
-    public static void main(String[] args) throws Exception {
+    @SuppressWarnings("static-access")
+	public static void main(String[] args) throws Exception {
 
             q3 obj=new q3();
 
@@ -41,9 +42,15 @@ public class q3{
         Execute annotationObject1=methodObject1.getAnnotation(Execute.class);
         Execute annotationObject2=methodObject2.getAnnotation(Execute.class);
         Execute annotationObject3=methodObject3.getAnnotation(Execute.class);
-        System.out.println(annotationObject1.sequence());
-        System.out.println(annotationObject2.sequence());
-        System.out.println(annotationObject3.sequence());
+        System.out.println("First method Sequence : "+annotationObject1.sequence());
+        System.out.println("Second method Sequence : "+annotationObject2.sequence());
+        System.out.println("Third method Sequence : "+annotationObject3.sequence());
+        System.out.println("Executing in the sequence order ");
+        obj.mymethod3();
+        obj.mymethod2();
+        obj.mymethod1();
+        
+        
 
 
 
