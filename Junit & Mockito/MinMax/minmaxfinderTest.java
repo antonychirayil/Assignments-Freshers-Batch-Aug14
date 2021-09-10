@@ -47,7 +47,7 @@ class minmaxfinderTest {
 	    public void test1Array() {
 		  minmaxfinder m1 = new minmaxfinder();
 	        int[] a1 = {1, 1, 1, 1, 1, 1, 1, 1, 1};
-	        assertThrows(ArrayStoreException.class, ()->m.FindMinMax(a1),"ARRAYSTOREEXCEPTION");
+	        assertThrows(ArrayStoreException.class, ()->m1.FindMinMax(a1),"ARRAYSTOREEXCEPTION");
 
 	    }
 	 
