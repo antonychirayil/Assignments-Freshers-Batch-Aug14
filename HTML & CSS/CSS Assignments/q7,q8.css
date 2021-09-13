@@ -1,12 +1,10 @@
-.q7 p{
+body{
     border-style: dotted;
     border-color: green;
     border-width: 5px;
-    bo
-;
-    
-}
-.q7 td{
+    }
+
+.q7 tr,td{
     border: 1px solid red;
-    font-size: larger;
+    font-size:larger;
 }
