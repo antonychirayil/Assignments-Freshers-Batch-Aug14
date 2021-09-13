@@ -1,0 +1,10 @@
+.q2{
+    background-color: lightcyan;
+}
+.q2 h2{
+    text-decoration: line-through;
+}
+
+.q2 h3{
+    text-decoration: underline;
+}
