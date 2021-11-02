@@ -14,6 +14,6 @@ Core Java
 Junit 
 
 
-HTML&CSS ------ status --------- Doing Assignments
+HTML&CSS 
 
 
