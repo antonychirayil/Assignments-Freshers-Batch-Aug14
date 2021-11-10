@@ -1,0 +1,1 @@
+mongosh "mongodb+srv://test.kapkg.mongodb.net/Test" --username antony
